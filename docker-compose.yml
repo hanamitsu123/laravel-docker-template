@@ -1,5 +1,6 @@
 services:
   app:
+    platform: linux/amd64 #追記しました。
     build: ./php
     volumes:
       - ./src:/var/www/src
@@ -9,6 +10,7 @@ services:
     depends_on:
       - db
   db:
+    platform: linux/amd64 #追記しました。
     image: mysql:8.0
     volumes:
       - db:/var/lib/mysql
