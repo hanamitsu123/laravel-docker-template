@@ -14,4 +14,10 @@ class TodoController extends Controller
         $todos = $todo->all(); //all()は、Eloquentクラスメソッドです。テーブルの全行を取得します。
         return view('todo.index', ['todos' => $todos]); //viewオブジェクトには、htmlを生成する機構がある。render()?
     }
+    public function create()
+    {
+        $todo = new Todo();
+        $todos = $todo->all();
+        return view('todo.create', ['todos' => $todos]);
+    }
 }
