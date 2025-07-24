@@ -42,7 +42,6 @@ Redirector::route() は内部で UrlGenerator を用いてルート名からURL�
 - @extends: 子Bladeで、利用する親Bladeを指定します。
 - @section: 子Bladeで、@section ~ @endsection で囲んだ部分を定義し、親Bladeの @yield が示す位置に差し込みます。
 - メリット: ヘッダーやフッターなどの共通部分を親Bladeにまとめられるため、各ページは差分だけを子Bladeに書けば済み、コードの重複が減って保守性が向上します。
-
 ### @csrfは何のための記述か
-
+- @csrfはBladeディレクティブで、フォーム送信時のCSRFを防ぐためのトークンを埋め込む役割があります。
 ### {{ }}とは何の省略系か
