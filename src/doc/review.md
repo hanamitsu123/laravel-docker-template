@@ -45,3 +45,4 @@ Redirector::route() は内部で UrlGenerator を用いてルート名からURL�
 ### @csrfは何のための記述か
 - @csrfはBladeディレクティブで、フォーム送信時のCSRFを防ぐためのトークンを埋め込む役割があります。
 ### {{ }}とは何の省略系か
+- <?php echo e(...); ?>の省略形です。
