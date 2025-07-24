@@ -26,7 +26,8 @@
 ### saveメソッドで実行しているSQLは何か
 - Insert into todos (content) values($todo['content']);です。
 ### redirect()->route()は何をしているか
-
+- redirect() は Redirector オブジェクトを返します。
+Redirector::route() は内部で UrlGenerator を用いてルート名からURLを生成し、そのURLを Redirector::to() に渡してRedirectResponse を作成します。返された RedirectResponse は、HTTP 302レスポンスと Location ヘッダーを持っており、ブラウザはこのヘッダーをもとに指定されたURLへ自動的に遷移します。
 ## その他
 
 ### テーブル構成をマイグレーションファイルで管理するメリット
