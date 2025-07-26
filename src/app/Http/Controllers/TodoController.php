@@ -11,26 +11,25 @@ class TodoController extends Controller
     public function index()
     {
         $todo = new Todo();
-        $todos = $todo->all(); //all()は、Eloquentクラスメソッドです。テーブルの全行を取得します。
-        return view('todo.index', ['todos' => $todos]); //viewオブジェクトには、htmlを生成する機構がある。render()?
+        $todos = $todo->all();
+        return view('todo.index', ['todos' => $todos]);
     }
-
     public function create()
     {
-        $todo = new Todo();
-        $todos = $todo->all();
-        return view('todo.create', ['todos' => $todos]);
+        return view('todo.create');
     }
-
     public function store(Request $request)
     {
-        //配列を格納する。
         $inputs = $request->all();
         $todo = new Todo();
         $todo->fill($inputs);
         $todo->save();
-
         return redirect()->route('todo.index');
-        //redirect()はredirectorインスタンスが返されます。
+    }
+    public function show($id)
+    {
+        $model = new Todo();
+        $todo = $model->find($id);
+        return view('todo.show', ['todo' => $todo]);
     }
 }
