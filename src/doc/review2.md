@@ -36,5 +36,5 @@
 ### ORMとは何か、またLaravelが使用しているORMは何か
 - ORM（Object Relational Mapper）は、データベースのレコードをオブジェクトとして扱えるようにする仕組みです。LaravelはEloquentORMを採用しており、SQL文を直接書かずにオブジェクト指向のメソッドでデータ操作が可能です。
 ### composer.json, composer.lockとは何か
-
+- composer.json は、インストールするライブラリとそのバージョン範囲を定義するファイルです。composer.lock は、実際にインストールされたライブラリの具体的なバージョンを固定化して記録するファイルです。
 ### composerでインストールしたパッケージ（ライブラリ）はどのディレクトリに格納されるのか
