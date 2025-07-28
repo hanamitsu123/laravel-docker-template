@@ -7,7 +7,7 @@
 ### findメソッドの引数に指定しているIDは何のIDか
 - todosテーブルの主キーの値です。
 ### findメソッドで実行しているSQLは何か
-
+- SELECT * FROM todos WHERE id = $id;
 ### findメソッドで取得できる値は何か
 
 ### saveメソッドは何を基準にINSERTとUPDATEを切り替えているのか
