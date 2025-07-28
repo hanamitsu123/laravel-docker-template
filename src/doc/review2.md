@@ -9,7 +9,7 @@
 ### findメソッドで実行しているSQLは何か
 - SELECT * FROM todos WHERE id = $id;
 ### findメソッドで取得できる値は何か
-
+- 該当のレコードがあれば、Todoモデルのオブジェクトを返します。
 ### saveメソッドは何を基準にINSERTとUPDATEを切り替えているのか
 
 ## Todo論理削除
