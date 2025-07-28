@@ -34,7 +34,7 @@
 ### MVCはどういったアーキテクチャか
 - MVCは、Model（データとロジック）、View（表示処理）、Controller（入力処理とModel・Viewの仲介）に役割を分けたアーキテクチャで、要素の分離によって開発効率と保守性を高める設計手法です。
 ### ORMとは何か、またLaravelが使用しているORMは何か
-
+- ORM（Object Relational Mapper）は、データベースのレコードをオブジェクトとして扱えるようにする仕組みです。LaravelはEloquentORMを採用しており、SQL文を直接書かずにオブジェクト指向のメソッドでデータ操作が可能です。
 ### composer.json, composer.lockとは何か
 
 ### composerでインストールしたパッケージ（ライブラリ）はどのディレクトリに格納されるのか
